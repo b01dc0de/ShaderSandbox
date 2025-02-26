@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{63cdfa42-7fb3-4b12-8770-178e5755515f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hlsl">
+      <UniqueIdentifier>{d11e6ead-c842-4fcd-a476-b0c90fbcd86e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hlsl\Examples">
+      <UniqueIdentifier>{3898ce1a-c85a-46be-86aa-3721a72320e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Atoll_mswin.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtollDrawState.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtollEngine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtollGraphics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AtollUtil.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderAtoll.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LvBitmapFile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Atoll_mswin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtollCommon.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtollDrawState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtollEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtollGraphics.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtollGraphicsTypes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AtollUtil.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LvBitmapFile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LvLib.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="src\HLSL\AtollMain.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\BaseShader.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\ErrorShader.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\LiveShader.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\LiveShader_Wrapper.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\ShaderCommon.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\AllExamples.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example1.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example2.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example3.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example4.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example5.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example6.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example7.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example8.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example9.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\Example10.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\Examples\ExampleCommon.hlsl">
+      <Filter>hlsl\Examples</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\LvLib.inl">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
