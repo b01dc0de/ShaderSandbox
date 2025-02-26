@@ -1,10 +1,10 @@
-#include "AtollEngine.h"
-#include "AtollGraphics.h"
+#include "SandboxEngine.h"
+#include "SandboxGraphics.h"
 #if PLATFORM_WINDOWS()
-	#include "Atoll_mswin.h"
+	#include "Sandbox_mswin.h"
 #endif // PLATFORM
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	bool bRunning = false;
 	HWND hWindow;
@@ -81,7 +81,7 @@ namespace ShaderAtoll
 			{
 				case VK_ESCAPE:
 				{
-					ShaderAtoll::bRunning = false;
+					ShaderSandbox::bRunning = false;
 				} break;
 				case VK_F11:
 				{
@@ -124,8 +124,8 @@ namespace ShaderAtoll
 			int PosX = GET_X_LPARAM(lParam);
 			int PosY = GET_Y_LPARAM(lParam);
 
-			ShaderAtoll::MousePosX = PosX;
-			ShaderAtoll::MousePosY = PosY;
+			ShaderSandbox::MousePosX = PosX;
+			ShaderSandbox::MousePosY = PosY;
 		}
 		return Result;
 	}
@@ -144,7 +144,7 @@ namespace ShaderAtoll
 
 		if (HWND hWnd = InitWindow(GlobalPlatformState.hInstance))
 		{
-			ShaderAtoll::hWindow = hWnd;
+			ShaderSandbox::hWindow = hWnd;
 
 			HRESULT Result = AtollGraphics::InitGraphics();
 			if (!SUCCEEDED(Result))
@@ -152,11 +152,11 @@ namespace ShaderAtoll
 				DebugBreak();
 			}
 
-			ShowWindow(ShaderAtoll::hWindow, GlobalPlatformState.nCmdShow);
+			ShowWindow(ShaderSandbox::hWindow, GlobalPlatformState.nCmdShow);
 
 			Clock.Init();
 
-			ShaderAtoll::bRunning = true;
+			ShaderSandbox::bRunning = true;
 		}
 		else
 		{
@@ -170,7 +170,7 @@ namespace ShaderAtoll
 	{
 		bool bResult = true;
 
-		while (ShaderAtoll::bRunning)
+		while (ShaderSandbox::bRunning)
 		{
 			// Update
 			PollInput();
@@ -198,7 +198,7 @@ namespace ShaderAtoll
 		// Get input
 		MSG msg;
 		BOOL MsgResult;
-		while ((MsgResult = PeekMessage(&msg, ShaderAtoll::hWindow, 0, 0, PM_REMOVE)) > 0)
+		while ((MsgResult = PeekMessage(&msg, ShaderSandbox::hWindow, 0, 0, PM_REMOVE)) > 0)
 		{
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
@@ -206,7 +206,7 @@ namespace ShaderAtoll
 
 		if (MsgResult == -1)
 		{
-			ShaderAtoll::bRunning = false;
+			ShaderSandbox::bRunning = false;
 		}
 	}
 
@@ -216,7 +216,7 @@ namespace ShaderAtoll
 		AppTime_s = Clock.fLast_s;
 		DeltaTime_ms = Clock.fDelta_ms;
 
-		UpdateWindow(ShaderAtoll::hWindow);
+		UpdateWindow(ShaderSandbox::hWindow);
 	}
 
 	void AtollEngine::Rest()
@@ -238,7 +238,7 @@ namespace ShaderAtoll
 			WinResY = Defaults::WinResY;
 		}
 		UINT WndFlags = 0;
-		SetWindowPos(ShaderAtoll::hWindow, HWND_TOP, 0, 0, WinResX, WinResY, WndFlags);
+		SetWindowPos(ShaderSandbox::hWindow, HWND_TOP, 0, 0, WinResX, WinResY, WndFlags);
 	}
 
 	void AtollEngine::TriggerShaderRecompile()

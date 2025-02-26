@@ -1,7 +1,7 @@
-#ifndef LVBITMAPFILE_H
-#define LVBITMAPFILE_H
+#ifndef BITMAPFILE_H
+#define BITMAPFILE_H
 
-namespace Lv
+namespace ShaderSandbox
 {
 	using u8 = unsigned char;
 	using u16 = unsigned short;
@@ -37,7 +37,7 @@ namespace Lv
 		float B;
 		float A;
 
-		static fRGBAColor ConvertFromRGBA32(Lv::RGBA32 InVal)
+		static fRGBAColor ConvertFromRGBA32(RGBA32 InVal)
 		{
 			constexpr float Divisor = 255.0f;
 			return fRGBAColor{

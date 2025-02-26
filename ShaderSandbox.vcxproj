@@ -147,27 +147,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\AtollDrawState.cpp" />
-    <ClCompile Include="src\AtollEngine.cpp" />
-    <ClCompile Include="src\AtollGraphics.cpp" />
-    <ClCompile Include="src\AtollUtil.cpp" />
-    <ClCompile Include="src\Atoll_mswin.cpp" />
-    <ClCompile Include="src\LvBitmapFile.cpp" />
-    <ClCompile Include="src\ShaderAtoll.cpp" />
+    <ClCompile Include="src\SandboxDrawState.cpp" />
+    <ClCompile Include="src\SandboxEngine.cpp" />
+    <ClCompile Include="src\SandboxGraphics.cpp" />
+    <ClCompile Include="src\SandboxUtil.cpp" />
+    <ClCompile Include="src\Sandbox_mswin.cpp" />
+    <ClCompile Include="src\BitmapFile.cpp" />
+    <ClCompile Include="src\ShaderSandbox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\AtollCommon.h" />
-    <ClInclude Include="src\AtollDrawState.h" />
-    <ClInclude Include="src\AtollEngine.h" />
-    <ClInclude Include="src\AtollGraphics.h" />
-    <ClInclude Include="src\AtollGraphicsTypes.h" />
-    <ClInclude Include="src\AtollUtil.h" />
-    <ClInclude Include="src\Atoll_mswin.h" />
-    <ClInclude Include="src\LvBitmapFile.h" />
-    <ClInclude Include="src\LvLib.h" />
+    <ClInclude Include="src\SandboxCommon.h" />
+    <ClInclude Include="src\SandboxDrawState.h" />
+    <ClInclude Include="src\SandboxEngine.h" />
+    <ClInclude Include="src\SandboxGraphics.h" />
+    <ClInclude Include="src\SandboxGraphicsTypes.h" />
+    <ClInclude Include="src\SandboxUtil.h" />
+    <ClInclude Include="src\Sandbox_mswin.h" />
+    <ClInclude Include="src\BitmapFile.h" />
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="src\HLSL\AtollMain.hlsl">
+    <FxCompile Include="src\HLSL\SandboxMain.hlsl">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </FxCompile>
     <FxCompile Include="src\HLSL\BaseShader.hlsl">
@@ -221,9 +220,6 @@
     <FxCompile Include="src\HLSL\ShaderCommon.hlsl">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </FxCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\LvLib.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

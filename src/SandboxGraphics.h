@@ -1,15 +1,14 @@
 #ifndef ATOLLGRAPHICS_H
 #define ATOLLGRAPHICS_H
 
-#include "AtollCommon.h"
-#include "LvLib.h"
-#include "AtollGraphicsTypes.h"
-#include "AtollDrawState.h"
+#include "SandboxCommon.h"
+#include "SandboxGraphicsTypes.h"
+#include "SandboxDrawState.h"
 
 #define DXCHECK(Result) if (FAILED(Result)) { DebugBreak(); }
 #define DXCHECKMSG(Result, Msg) if (FAILED(Result)) { OutputDebugStringA((Msg)); DebugBreak(); }
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	struct AtollGraphics
 	{

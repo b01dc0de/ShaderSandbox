@@ -1,5 +1,5 @@
-#ifndef ATOLLCOMMON_H
-#define ATOLLCOMMON_H
+#ifndef SANDBOXCOMMON_H
+#define SANDBOXCOMMON_H
 
 // Platform
 #define PLATFORM_WINDOWS() (1)
@@ -27,8 +27,8 @@
 using uchar = unsigned char;
 using uint = unsigned int;
 
-#include "AtollEngine.h"
-#include "AtollUtil.h"
+#include "SandboxEngine.h"
+#include "SandboxUtil.h"
 
-#endif  // ATOLLCOMMON_H
+#endif  // SANDBOXCOMMON_H
 

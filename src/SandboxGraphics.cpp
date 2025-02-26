@@ -1,8 +1,8 @@
-#include "AtollGraphics.h"
-#include "AtollDrawState.h"
-#include "LvBitmapFile.h"
+#include "SandboxGraphics.h"
+#include "SandboxDrawState.h"
+#include "BitmapFile.h"
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	template <>
 	DXHandle<ID3D11Device>::DXHandle(ID3D11Device* InHandle)
@@ -202,8 +202,8 @@ namespace ShaderAtoll
 		DXCHECK(Result);
 
 		D3D11_TEXTURE2D_DESC DepthDesc = {};
-		DepthDesc.Width = ShaderAtoll::WinResX;
-		DepthDesc.Height = ShaderAtoll::WinResY;
+		DepthDesc.Width = ShaderSandbox::WinResX;
+		DepthDesc.Height = ShaderSandbox::WinResY;
 		DepthDesc.MipLevels = 1;
 		DepthDesc.ArraySize = 1;
 		DepthDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
@@ -291,14 +291,12 @@ namespace ShaderAtoll
 
 		// Load BMP file as DX11 Texture2D
 		{
-			// CKA_TODO: Change 'Test.bmp' to the fallback texture used by Leviathan w/ debug corner squares
-
-			Lv::Image32 DebugTextureFile = {};
-			Lv::ReadBMP("Assets/DebugTexture.bmp", DebugTextureFile);
+			Image32 DebugTextureFile = {};
+			ReadBMP("Assets/DebugTexture.bmp", DebugTextureFile);
 
 			constexpr DXGI_FORMAT BMP_DXGI_FORMAT = DXGI_FORMAT_R32G32B32A32_FLOAT;
 
-			using fRGBAColor = Lv::fRGBAColor;
+			using fRGBAColor = fRGBAColor;
 
 			fRGBAColor* TmpPxData = new fRGBAColor[DebugTextureFile.PxCount];
 			for (unsigned int PxIdx = 0; PxIdx < DebugTextureFile.PxCount; PxIdx++)

@@ -1,7 +1,7 @@
-#include "AtollDrawState.h"
-#include "AtollGraphics.h"
+#include "SandboxDrawState.h"
+#include "SandboxGraphics.h"
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	namespace ShaderUtils
 	{

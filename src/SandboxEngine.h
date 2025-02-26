@@ -1,9 +1,9 @@
 #ifndef ATOLLENGINE_H
 #define ATOLLENGINE_H
 
-#include "AtollCommon.h"
+#include "SandboxCommon.h"
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	// Globals
 	extern bool bRunning;

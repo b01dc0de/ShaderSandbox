@@ -2,7 +2,7 @@
 // BaseShader.hlsl //
 /////////////////////
 
-#include "AtollMain.hlsl"
+#include "SandboxMain.hlsl"
 
 PS_INPUT VSMain(VS_INPUT Input)
 {
@@ -18,7 +18,7 @@ PS_INPUT VSMain(VS_INPUT Input)
 float4 PSMain(PS_INPUT Input) : SV_Target
 {
 #if !ENABLE_VERTEX_COLOR
-    return AtollMain(Input);
+    return SandboxMain(Input);
 #else // ENABLE_VERTEX_COLOR
     return Input.RGBA;
 #endif // ENABLE_VERTEX_COLOR

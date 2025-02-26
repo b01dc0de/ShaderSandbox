@@ -1,6 +1,6 @@
-#include "AtollUtil.h"
+#include "SandboxUtil.h"
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	SysInfo GlobalSysInfo;
 

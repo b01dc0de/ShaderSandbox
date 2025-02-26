@@ -1,10 +1,10 @@
 #ifndef ATOLLDRAWPIPELINESTATE_H
 #define ATOLLDRAWPIPELINESTATE_H
 
-#include "AtollCommon.h"
-#include "AtollGraphicsTypes.h"
+#include "SandboxCommon.h"
+#include "SandboxGraphicsTypes.h"
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	struct DrawPipelineState
 	{

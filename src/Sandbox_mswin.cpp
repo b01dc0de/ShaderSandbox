@@ -1,8 +1,8 @@
-#include "Atoll_mswin.h"
-#include "AtollGraphics.h"
-#include "AtollEngine.h"
+#include "Sandbox_mswin.h"
+#include "SandboxGraphics.h"
+#include "SandboxEngine.h"
 
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	HWND InitWindow(HINSTANCE hInstance)
 	{
@@ -16,7 +16,7 @@ namespace ShaderAtoll
 		//ATOM RegClassResult = 
 		RegisterClassEx(&WndClass);
 
-		RECT WndRect = { 0, 0, (LONG)ShaderAtoll::WinResX, (LONG)ShaderAtoll::WinResY };
+		RECT WndRect = { 0, 0, (LONG)ShaderSandbox::WinResX, (LONG)ShaderSandbox::WinResY };
 		UINT WndStyle = WS_CAPTION;
 		UINT WndExStyle = WS_EX_OVERLAPPEDWINDOW;
 		AdjustWindowRectEx(&WndRect, WndStyle, FALSE, WndExStyle);

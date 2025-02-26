@@ -1,5 +1,5 @@
 /////////////////////
-// AtollMain.hlsl //
+// SandboxMain.hlsl //
 /////////////////////
 
 #include "ShaderCommon.hlsl"
@@ -21,7 +21,7 @@
     #include "Examples/AllExamples.hlsl"
 #endif // SELECT_LIVE_SHADER
 
-float4 AtollMain(PS_INPUT Input)
+float4 SandboxMain(PS_INPUT Input)
 {
 #if SELECT_ERROR_SHADER
     return Main_Error(Input);

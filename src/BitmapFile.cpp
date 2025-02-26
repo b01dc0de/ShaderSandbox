@@ -1,8 +1,8 @@
-#include "LvBitmapFile.h"
+#include "BitmapFile.h"
 
 #include <cstdio>
 
-namespace Lv
+namespace ShaderSandbox
 {
 	enum struct FallbackBitmapColors
 	{

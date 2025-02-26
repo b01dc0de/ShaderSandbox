@@ -1,10 +1,10 @@
-#include "AtollCommon.h"
-#include "Atoll_mswin.h"
+#include "SandboxCommon.h"
+#include "Sandbox_mswin.h"
 
 #if PLATFORM_WINDOWS()
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nCmdShow)
 {
-	int ExitCode = ShaderAtoll::WinMain(hInstance, hPrevInstance, lpCmdLine, nCmdShow);
+	int ExitCode = ShaderSandbox::WinMain(hInstance, hPrevInstance, lpCmdLine, nCmdShow);
 
 	return ExitCode;
 }

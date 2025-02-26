@@ -1,9 +1,7 @@
 #ifndef ATOLLGRAPHICSTYPES_H
 #define ATOLLGRAPHICSTYPES_H
 
-#include "LvLib.h"
-
-namespace ShaderAtoll
+namespace ShaderSandbox
 {
 	struct VF2
 	{
@@ -50,7 +48,7 @@ namespace ShaderAtoll
 
 	struct DXHandleMgr
 	{
-		Lv::DynArray<IUnknown**> HandleList;
+		DynArray<IUnknown**> HandleList;
 
 		void LocalAdd(IUnknown** InHandle);
 		void LocalSafeReleaseAll();
